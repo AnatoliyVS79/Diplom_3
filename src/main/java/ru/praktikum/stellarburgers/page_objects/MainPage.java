@@ -32,6 +32,7 @@ public class MainPage {
         this.driver = driver;
         PageFactory.initElements(driver, this);
     }
+
     public void clickAccountButton() {
         homeAccountButton.click();
     }
@@ -51,6 +52,7 @@ public class MainPage {
     public void clickOnFillingsSectionButton() {
         fillingsSectionButton.click();
     }
+
     public boolean isSectionButtonSelected(WebElement sectionButton) {
         return sectionButton.getAttribute("class").contains("tab_tab_type_current__2BEPc");
     }

@@ -6,8 +6,8 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import ru.praktikum.stellarburgers.constants.Browser;
 
 public class DriverInitializer {
-    public  static WebDriver getDriver(Browser browser){
-        switch (browser){
+    public static WebDriver getDriver(Browser browser) {
+        switch (browser) {
             case CHROME:
                 WebDriverManager.chromedriver().setup();
                 return new ChromeDriver();

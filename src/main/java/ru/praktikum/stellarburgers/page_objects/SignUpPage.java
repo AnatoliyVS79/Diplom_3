@@ -21,6 +21,7 @@ public class SignUpPage {
     WebElement signInButton;
     @FindBy(xpath = "//p[text()='Некорректный пароль']")
     WebElement passwordErrorMessage;
+
     public SignUpPage(WebDriver driver) {
         this.driver = driver;
         PageFactory.initElements(driver, this);

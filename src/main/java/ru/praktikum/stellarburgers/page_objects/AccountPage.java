@@ -32,7 +32,11 @@ public class AccountPage {
         PageFactory.initElements(driver, this);
     }
 
-    public void clickGoToConstructorButton(){goToConstructorButton.click();}
+    public void clickGoToConstructorButton() {
+        goToConstructorButton.click();
+    }
 
-    public void clickLogoutButton() {logoutButton.click();}
+    public void clickLogoutButton() {
+        logoutButton.click();
+    }
 }
