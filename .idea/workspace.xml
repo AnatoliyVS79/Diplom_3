@@ -4,20 +4,38 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8cd4d728-7fad-4aca-86f1-6a034eea959f" name="Changes" comment="" />
+    <list default="true" id="8cd4d728-7fad-4aca-86f1-6a034eea959f" name="Changes" comment="formatted all">
+      <change afterPath="$PROJECT_DIR$/src/test/java/ru/praktikum/stellarburgers/ConstructorTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MacroExpansionManager">
+    <option name="directoryName" value="zqyi5dlv" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="2" />
   </component>
   <component name="ProjectId" id="2P2wdMwUGYXYTVYb6OSobDAOC74" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -25,9 +43,55 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true"
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "G:/AUTOMATIZATION/Diplom/Diplom_Anatoliy_Samoylov_17/Diplom_3/src/test/resources"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="G:\AUTOMATIZATION\Diplom\Diplom_Anatoliy_Samoylov_17\Diplom_3\src\test\resources" />
+      <recent name="G:\AUTOMATIZATION\Diplom\Diplom_Anatoliy_Samoylov_17\Diplom_3\src\test" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.ConstructorTest">
+    <configuration name="ConstructorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Diplom_3" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.praktikum.stellarburgers.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.praktikum.stellarburgers" />
+      <option name="MAIN_CLASS_NAME" value="ru.praktikum.stellarburgers.ConstructorTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ConstructorTest.clickOnSousesSectionButtonAutoScroll" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Diplom_3" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.praktikum.stellarburgers.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.praktikum.stellarburgers" />
+      <option name="MAIN_CLASS_NAME" value="ru.praktikum.stellarburgers.ConstructorTest" />
+      <option name="METHOD_NAME" value="clickOnSousesSectionButtonAutoScroll" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.ConstructorTest" />
+        <item itemvalue="JUnit.ConstructorTest.clickOnSousesSectionButtonAutoScroll" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -37,6 +101,146 @@
       <option name="presentableId" value="Default" />
       <updated>1682668570959</updated>
     </task>
+    <task id="LOCAL-00001" summary="added gitignore and pom.xml">
+      <created>1682668998554</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1682668998555</updated>
+    </task>
+    <task id="LOCAL-00002" summary="added UsersSteps">
+      <created>1682672512396</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1682672512396</updated>
+    </task>
+    <task id="LOCAL-00003" summary="added BaseConstants, Browser, UserConstants">
+      <created>1682672578112</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1682672578112</updated>
+    </task>
+    <task id="LOCAL-00004" summary="added AccountPage">
+      <created>1682672611664</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1682672611664</updated>
+    </task>
+    <task id="LOCAL-00005" summary="added ForgotPasswordPage">
+      <created>1682672712891</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1682672712891</updated>
+    </task>
+    <task id="LOCAL-00006" summary="added BasicResponse">
+      <created>1682673057671</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1682673057671</updated>
+    </task>
+    <task id="LOCAL-00007" summary="added NestedUserInfo">
+      <created>1682673076755</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1682673076755</updated>
+    </task>
+    <task id="LOCAL-00008" summary="added SignInRequest">
+      <created>1682673118146</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1682673118146</updated>
+    </task>
+    <task id="LOCAL-00009" summary="added SuccessSignInSignUpResponse">
+      <created>1682673186838</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1682673186838</updated>
+    </task>
+    <task id="LOCAL-00010" summary="added UserRequest">
+      <created>1682673209533</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1682673209533</updated>
+    </task>
+    <task id="LOCAL-00011" summary="added LoginPage">
+      <created>1682673432274</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1682673432274</updated>
+    </task>
+    <task id="LOCAL-00012" summary="added MainPage">
+      <created>1682673449269</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1682673449269</updated>
+    </task>
+    <task id="LOCAL-00013" summary="added SignUpPage">
+      <created>1682673466473</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1682673466473</updated>
+    </task>
+    <task id="LOCAL-00014" summary="added ConfigFileReader and file application.properties">
+      <created>1682674784212</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1682674784212</updated>
+    </task>
+    <task id="LOCAL-00015" summary="added DriverInitializer and file yandexdriver-23.3.0.2247-win">
+      <created>1682675231049</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1682675231049</updated>
+    </task>
+    <task id="LOCAL-00016" summary="added UsersUtils">
+      <created>1682675506925</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1682675506925</updated>
+    </task>
+    <task id="LOCAL-00017" summary="formatted all">
+      <created>1682677303171</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1682677303171</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="added gitignore and pom.xml" />
+    <MESSAGE value="added UsersSteps" />
+    <MESSAGE value="added BaseConstants, Browser, UserConstants" />
+    <MESSAGE value="added AccountPage" />
+    <MESSAGE value="added ForgotPasswordPage" />
+    <MESSAGE value="added BasicResponse" />
+    <MESSAGE value="added NestedUserInfo" />
+    <MESSAGE value="added SignInRequest" />
+    <MESSAGE value="added SuccessSignInSignUpResponse" />
+    <MESSAGE value="added UserRequest" />
+    <MESSAGE value="added LoginPage" />
+    <MESSAGE value="added MainPage" />
+    <MESSAGE value="added SignUpPage" />
+    <MESSAGE value="added ConfigFileReader and file application.properties" />
+    <MESSAGE value="added DriverInitializer and file yandexdriver-23.3.0.2247-win" />
+    <MESSAGE value="added UsersUtils" />
+    <MESSAGE value="formatted all" />
+    <option name="LAST_COMMIT_MESSAGE" value="formatted all" />
   </component>
 </project>
