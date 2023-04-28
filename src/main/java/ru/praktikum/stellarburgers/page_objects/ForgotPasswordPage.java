@@ -1,4 +1,4 @@
-package ru.praktikum.stellarburgers.constants;
+package ru.praktikum.stellarburgers.page_objects;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
