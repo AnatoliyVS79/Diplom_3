@@ -1,10 +1,11 @@
 package ru.praktikum.stellarburgers.page_objects;
 
+import lombok.Data;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-
+@Data
 public class ForgotPasswordPage {
     WebDriver driver;
     @FindBy(xpath = "//input[@name='name']")
