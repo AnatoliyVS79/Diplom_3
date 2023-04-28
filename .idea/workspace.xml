@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8cd4d728-7fad-4aca-86f1-6a034eea959f" name="Changes" comment="formatted all">
-      <change afterPath="$PROJECT_DIR$/src/test/java/ru/praktikum/stellarburgers/ConstructorTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="8cd4d728-7fad-4aca-86f1-6a034eea959f" name="Changes" comment="added ConstructorTest">
+      <change afterPath="$PROJECT_DIR$/src/test/java/ru/praktikum/stellarburgers/GoToAccountTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/praktikum/stellarburgers/api/UsersSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/praktikum/stellarburgers/api/UsersSteps.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,7 +53,7 @@
       <recent name="G:\AUTOMATIZATION\Diplom\Diplom_Anatoliy_Samoylov_17\Diplom_3\src\test" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ConstructorTest">
+  <component name="RunManager" selected="JUnit.GoToAccountTest">
     <configuration name="ConstructorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Diplom_3" />
       <extension name="coverage">
@@ -85,8 +85,24 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="GoToAccountTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Diplom_3" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.praktikum.stellarburgers.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.praktikum.stellarburgers" />
+      <option name="MAIN_CLASS_NAME" value="ru.praktikum.stellarburgers.GoToAccountTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.GoToAccountTest" />
         <item itemvalue="JUnit.ConstructorTest" />
         <item itemvalue="JUnit.ConstructorTest.clickOnSousesSectionButtonAutoScroll" />
       </list>
@@ -220,7 +236,14 @@
       <option name="project" value="LOCAL" />
       <updated>1682677303171</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="added ConstructorTest">
+      <created>1682681512651</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1682681512651</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -241,6 +264,7 @@
     <MESSAGE value="added DriverInitializer and file yandexdriver-23.3.0.2247-win" />
     <MESSAGE value="added UsersUtils" />
     <MESSAGE value="formatted all" />
-    <option name="LAST_COMMIT_MESSAGE" value="formatted all" />
+    <MESSAGE value="added ConstructorTest" />
+    <option name="LAST_COMMIT_MESSAGE" value="added ConstructorTest" />
   </component>
 </project>

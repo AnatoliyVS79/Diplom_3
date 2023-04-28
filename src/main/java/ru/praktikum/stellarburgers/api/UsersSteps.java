@@ -6,6 +6,7 @@ import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 import ru.praktikum.stellarburgers.pojos.SignInRequest;
+import ru.praktikum.stellarburgers.pojos.UserRequest;
 
 import static io.restassured.RestAssured.given;
 import static ru.praktikum.stellarburgers.constants.BaseConstants.BASE_TEST_URL;
@@ -20,7 +21,7 @@ public class UsersSteps {
                     .build();
 
     @Step("Создаём уникального юзера")
-    public static Response createUniqueUser(UsersSteps body) {
+    public static Response createUniqueUser(UserRequest body) {
         return given()
                 .spec(REQUEST_SPECIFICATION)
                 .body(body)
