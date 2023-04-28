@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8cd4d728-7fad-4aca-86f1-6a034eea959f" name="Changes" comment="added GoToAccountTest">
-      <change afterPath="$PROJECT_DIR$/src/test/java/ru/praktikum/stellarburgers/GoToConstructorTest.java" afterDir="false" />
+    <list default="true" id="8cd4d728-7fad-4aca-86f1-6a034eea959f" name="Changes" comment="added GoToConstructorTest">
+      <change afterPath="$PROJECT_DIR$/src/test/java/ru/praktikum/stellarburgers/LoginUserTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,7 +52,7 @@
       <recent name="G:\AUTOMATIZATION\Diplom\Diplom_Anatoliy_Samoylov_17\Diplom_3\src\test" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.GoToConstructorTest">
+  <component name="RunManager" selected="JUnit.LoginUserTest">
     <configuration name="ConstructorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Diplom_3" />
       <extension name="coverage">
@@ -114,8 +114,24 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="LoginUserTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Diplom_3" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.praktikum.stellarburgers.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.praktikum.stellarburgers" />
+      <option name="MAIN_CLASS_NAME" value="ru.praktikum.stellarburgers.LoginUserTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.LoginUserTest" />
         <item itemvalue="JUnit.GoToConstructorTest" />
         <item itemvalue="JUnit.GoToAccountTest" />
         <item itemvalue="JUnit.ConstructorTest" />
@@ -265,7 +281,14 @@
       <option name="project" value="LOCAL" />
       <updated>1682683624535</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="added GoToConstructorTest">
+      <created>1682686191773</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1682686191773</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -288,6 +311,7 @@
     <MESSAGE value="formatted all" />
     <MESSAGE value="added ConstructorTest" />
     <MESSAGE value="added GoToAccountTest" />
-    <option name="LAST_COMMIT_MESSAGE" value="added GoToAccountTest" />
+    <MESSAGE value="added GoToConstructorTest" />
+    <option name="LAST_COMMIT_MESSAGE" value="added GoToConstructorTest" />
   </component>
 </project>
