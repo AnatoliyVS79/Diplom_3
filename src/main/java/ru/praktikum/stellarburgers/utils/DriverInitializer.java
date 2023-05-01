@@ -14,7 +14,7 @@ public class DriverInitializer {
 
             case YANDEX:
                 System.setProperty("webdriver.chrome.driver",
-                        "src/test/resources/yandexdriver-23.3.0.2247-win/yandexdriver.exe");
+                        "src/test/resources/yandexdriver.exe");
                 return new ChromeDriver();
 
             default:

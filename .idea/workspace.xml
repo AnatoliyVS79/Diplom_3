@@ -4,10 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8cd4d728-7fad-4aca-86f1-6a034eea959f" name="Changes" comment="added LoginUserTest">
-      <change afterPath="$PROJECT_DIR$/src/test/java/ru/praktikum/stellarburgers/LogoutTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ru/praktikum/stellarburgers/SignUpTest.java" afterDir="false" />
+    <list default="true" id="8cd4d728-7fad-4aca-86f1-6a034eea959f" name="Changes" comment="addition README.md">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/simplelogger.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/praktikum/stellarburgers/utils/DriverInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/praktikum/stellarburgers/utils/DriverInitializer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/yandexdriver-23.3.0.2247-win/yandexdriver.exe" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/yandexdriver.exe" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,32 +49,27 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "G:/AUTOMATIZATION/Diplom/Diplom_Anatoliy_Samoylov_17/Diplom_3/src/test/resources"
+    "last_opened_file_path": "G:/AUTOMATIZATION/Diplom/Diplom_Anatoliy_Samoylov_17/Diplom_3/src/main"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="G:\AUTOMATIZATION\Diplom\Diplom_Anatoliy_Samoylov_17\Diplom_3\src\main" />
       <recent name="G:\AUTOMATIZATION\Diplom\Diplom_Anatoliy_Samoylov_17\Diplom_3\src\test\resources" />
       <recent name="G:\AUTOMATIZATION\Diplom\Diplom_Anatoliy_Samoylov_17\Diplom_3\src\test" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="G:\AUTOMATIZATION\Diplom\Diplom_Anatoliy_Samoylov_17\Diplom_3\src\test\resources" />
+      <recent name="G:\AUTOMATIZATION\Diplom\Diplom_Anatoliy_Samoylov_17\Diplom_3\src\test\java\ru\praktikum\stellarburgers" />
+    </key>
   </component>
-  <component name="RunManager" selected="JUnit.SignUpTest">
-    <configuration name="GoToAccountTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Diplom_3" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ru.praktikum.stellarburgers.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="ru.praktikum.stellarburgers" />
-      <option name="MAIN_CLASS_NAME" value="ru.praktikum.stellarburgers.GoToAccountTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="GoToConstructorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="mvn clean test" />
+    </option>
+  </component>
+  <component name="RunManager" selected="JUnit.GoToConstructorTest.goToConstructorFromAccountSuccess">
+    <configuration name="GoToConstructorTest.goToConstructorFromAccountSuccess" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Diplom_3" />
       <extension name="coverage">
         <pattern>
@@ -80,12 +79,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="ru.praktikum.stellarburgers" />
       <option name="MAIN_CLASS_NAME" value="ru.praktikum.stellarburgers.GoToConstructorTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="METHOD_NAME" value="goToConstructorFromAccountSuccess" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LoginUserTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="LoginUserTest.signInWithValidDataWithAccountButtonSuccess" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Diplom_3" />
       <extension name="coverage">
         <pattern>
@@ -95,12 +95,29 @@
       </extension>
       <option name="PACKAGE_NAME" value="ru.praktikum.stellarburgers" />
       <option name="MAIN_CLASS_NAME" value="ru.praktikum.stellarburgers.LoginUserTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="METHOD_NAME" value="signInWithValidDataWithAccountButtonSuccess" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LogoutTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="LoginUserTest.signInWithValidDataWithSignInButtonSuccess" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Diplom_3" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.praktikum.stellarburgers.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.praktikum.stellarburgers" />
+      <option name="MAIN_CLASS_NAME" value="ru.praktikum.stellarburgers.LoginUserTest" />
+      <option name="METHOD_NAME" value="signInWithValidDataWithSignInButtonSuccess" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LogoutTest.logoutWithLogoutButtonSuccess" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Diplom_3" />
       <extension name="coverage">
         <pattern>
@@ -110,12 +127,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="ru.praktikum.stellarburgers" />
       <option name="MAIN_CLASS_NAME" value="ru.praktikum.stellarburgers.LogoutTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="METHOD_NAME" value="logoutWithLogoutButtonSuccess" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SignUpTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SignUpTest.signUpWithValidDataSuccess" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Diplom_3" />
       <extension name="coverage">
         <pattern>
@@ -125,18 +143,19 @@
       </extension>
       <option name="PACKAGE_NAME" value="ru.praktikum.stellarburgers" />
       <option name="MAIN_CLASS_NAME" value="ru.praktikum.stellarburgers.SignUpTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="METHOD_NAME" value="signUpWithValidDataSuccess" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.SignUpTest" />
-        <item itemvalue="JUnit.LogoutTest" />
-        <item itemvalue="JUnit.LoginUserTest" />
-        <item itemvalue="JUnit.GoToConstructorTest" />
-        <item itemvalue="JUnit.GoToAccountTest" />
+        <item itemvalue="JUnit.GoToConstructorTest.goToConstructorFromAccountSuccess" />
+        <item itemvalue="JUnit.LoginUserTest.signInWithValidDataWithSignInButtonSuccess" />
+        <item itemvalue="JUnit.LoginUserTest.signInWithValidDataWithAccountButtonSuccess" />
+        <item itemvalue="JUnit.SignUpTest.signUpWithValidDataSuccess" />
+        <item itemvalue="JUnit.LogoutTest.logoutWithLogoutButtonSuccess" />
       </list>
     </recent_temporary>
   </component>
@@ -296,7 +315,35 @@
       <option name="project" value="LOCAL" />
       <updated>1682686591682</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="added LogoutTest">
+      <created>1682687202882</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1682687202882</updated>
+    </task>
+    <task id="LOCAL-00023" summary="added SignUpTest">
+      <created>1682687226591</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1682687226591</updated>
+    </task>
+    <task id="LOCAL-00024" summary="added README.md">
+      <created>1682699326421</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1682699326421</updated>
+    </task>
+    <task id="LOCAL-00025" summary="addition README.md">
+      <created>1682699528531</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1682699528531</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -321,6 +368,10 @@
     <MESSAGE value="added GoToAccountTest" />
     <MESSAGE value="added GoToConstructorTest" />
     <MESSAGE value="added LoginUserTest" />
-    <option name="LAST_COMMIT_MESSAGE" value="added LoginUserTest" />
+    <MESSAGE value="added LogoutTest" />
+    <MESSAGE value="added SignUpTest" />
+    <MESSAGE value="added README.md" />
+    <MESSAGE value="addition README.md" />
+    <option name="LAST_COMMIT_MESSAGE" value="addition README.md" />
   </component>
 </project>
