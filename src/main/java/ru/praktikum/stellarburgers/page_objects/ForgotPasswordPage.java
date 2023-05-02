@@ -10,11 +10,11 @@ import org.openqa.selenium.support.PageFactory;
 public class ForgotPasswordPage {
     WebDriver driver;
     @FindBy(xpath = "//input[@name='name']")
-    WebElement emailField;
+    private WebElement emailField;
     @FindBy(xpath = "//button[text()='Восстановить']")
-    WebElement recoverButton;
+    private WebElement recoverButton;
     @FindBy(xpath = "//a[@href='/login']")
-    WebElement signInButton;
+    private WebElement signInButton;
 
     public ForgotPasswordPage(WebDriver driver) {
         this.driver = driver;

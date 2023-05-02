@@ -11,15 +11,15 @@ import ru.praktikum.stellarburgers.pojos.SignInRequest;
 public class LoginPage {
     WebDriver driver;
     @FindBy(xpath = "//input[@name='name']")
-    WebElement emailField;
+    private WebElement emailField;
     @FindBy(xpath = "//input[@type='password']")
-    WebElement passwordField;
+    private WebElement passwordField;
     @FindBy(xpath = "//button[text()='Войти']")
-    WebElement signInButton;
+    private WebElement signInButton;
     @FindBy(xpath = "//a[@href='/register']")
-    WebElement signUpButton;
+    private WebElement signUpButton;
     @FindBy(xpath = "//a[@href='/forgot-password']")
-    WebElement recoverPasswordButton;
+    private WebElement recoverPasswordButton;
 
     public LoginPage(WebDriver driver) {
         this.driver = driver;

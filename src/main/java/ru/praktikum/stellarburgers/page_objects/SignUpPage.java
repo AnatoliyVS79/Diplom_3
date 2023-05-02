@@ -10,17 +10,17 @@ import org.openqa.selenium.support.PageFactory;
 public class SignUpPage {
     WebDriver driver;
     @FindBy(xpath = "//label[text()='Имя']//following-sibling::input")
-    WebElement nameField;
+    private WebElement nameField;
     @FindBy(xpath = "//label[text()='Email']//following-sibling::input")
-    WebElement emailField;
+    private WebElement emailField;
     @FindBy(xpath = "//label[text()='Пароль']//following-sibling::input")
-    WebElement passwordField;
+    private WebElement passwordField;
     @FindBy(xpath = "//button[text()='Зарегистрироваться']")
-    WebElement signUpButton;
+    private WebElement signUpButton;
     @FindBy(xpath = "//a[@href='/login']")
-    WebElement signInButton;
+    private WebElement signInButton;
     @FindBy(xpath = "//p[text()='Некорректный пароль']")
-    WebElement passwordErrorMessage;
+    private WebElement passwordErrorMessage;
 
     public SignUpPage(WebDriver driver) {
         this.driver = driver;
