@@ -6,11 +6,8 @@ import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
-import org.junit.runner.RunWith;
-import org.junit.runners.Parameterized;
 import org.openqa.selenium.WebDriver;
 import ru.praktikum.stellarburgers.api.UsersSteps;
-import ru.praktikum.stellarburgers.constants.Browser;
 import ru.praktikum.stellarburgers.page_objects.AccountPage;
 import ru.praktikum.stellarburgers.page_objects.LoginPage;
 import ru.praktikum.stellarburgers.page_objects.MainPage;
@@ -23,30 +20,17 @@ import ru.praktikum.stellarburgers.utils.UsersUtils;
 
 import java.time.Duration;
 
-@RunWith(Parameterized.class)
 public class GoToAccountTest {
     WebDriver driver;
     MainPage mainPage;
     LoginPage loginPage;
     AccountPage accountPage;
-    Browser browserEnum;
-    ConfigFileReader configFileReader = new ConfigFileReader();
+     ConfigFileReader configFileReader = new ConfigFileReader();
 
-    public GoToAccountTest(Browser browserEnum) {
-        this.browserEnum = browserEnum;
-    }
-
-    @Parameterized.Parameters
-    public static Object[][] getData(){
-        return new Object[][]{
-                {Browser.CHROME},
-                {Browser.YANDEX}
-        };
-    }
 
     @Before
     public void init() {
-        driver = DriverInitializer.getDriver(browserEnum);
+        driver = DriverInitializer.createWebDriver();
         driver.get(configFileReader.getApplicationUrl());
         mainPage = new MainPage(driver);
         accountPage = new AccountPage(driver);
@@ -57,7 +41,7 @@ public class GoToAccountTest {
 
     @After
     public void shutdown() {
-        driver.quit();
+        driver.close();
     }
 
     @Test

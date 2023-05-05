@@ -7,11 +7,8 @@ import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
-import org.junit.runner.RunWith;
-import org.junit.runners.Parameterized;
 import org.openqa.selenium.WebDriver;
 import ru.praktikum.stellarburgers.api.UsersSteps;
-import ru.praktikum.stellarburgers.constants.Browser;
 import ru.praktikum.stellarburgers.page_objects.LoginPage;
 import ru.praktikum.stellarburgers.page_objects.MainPage;
 import ru.praktikum.stellarburgers.page_objects.SignUpPage;
@@ -22,37 +19,26 @@ import ru.praktikum.stellarburgers.utils.DriverInitializer;
 
 import java.time.Duration;
 
-@RunWith(Parameterized.class)
 public class SignUpTest {
     WebDriver driver;
     MainPage mainPage;
     LoginPage loginPage;
     SignUpPage signUpPage;
-    Browser browserEnum;
-    public SignUpTest(Browser browserEnum) {
-        this.browserEnum = browserEnum;
-    }
+
 
     @Before
     public void init() {
-        driver = DriverInitializer.getDriver(browserEnum);
+        driver = DriverInitializer.createWebDriver();
         driver.get(new ConfigFileReader().getApplicationUrl());
         this.mainPage = new MainPage(driver);
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
     }
 
-    @Parameterized.Parameters
-    public static Object[][] getData() {
-        return new Object[][]{
-                {Browser.CHROME},
-                {Browser.YANDEX}
-        };
-    }
 
     @After
     public void shutdown() {
-        driver.quit();
+        driver.close();
     }
 
     @DisplayName("Успешная регистрация с корректными данными")

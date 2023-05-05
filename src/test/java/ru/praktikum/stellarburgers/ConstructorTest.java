@@ -6,39 +6,23 @@ import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
-import org.junit.runner.RunWith;
-import org.junit.runners.Parameterized;
 import org.openqa.selenium.WebDriver;
-import ru.praktikum.stellarburgers.constants.Browser;
 import ru.praktikum.stellarburgers.page_objects.MainPage;
 import ru.praktikum.stellarburgers.utils.ConfigFileReader;
 import ru.praktikum.stellarburgers.utils.DriverInitializer;
 
 import java.time.Duration;
 
-@RunWith(Parameterized.class)
+
 public class ConstructorTest {
     WebDriver driver;
     MainPage mainPage;
-    Browser browserEnum;
     ConfigFileReader configFileReader = new ConfigFileReader();
 
-    public ConstructorTest(Browser browserEnum) {
-        this.browserEnum = browserEnum;
-    }
-
-    @Parameterized.Parameters
-    public static Object[][] getData() {
-        return new Object[][]{
-                {Browser.CHROME},
-                {Browser.YANDEX}
-        };
-    }
-
-    @Before
+     @Before
     public void init() {
         RestAssured.enableLoggingOfRequestAndResponseIfValidationFails();
-        this.driver = DriverInitializer.getDriver(browserEnum);
+        driver = DriverInitializer.createWebDriver();
 
         driver.get(configFileReader.getApplicationUrl());
         this.mainPage = new MainPage(driver);
@@ -53,9 +37,10 @@ public class ConstructorTest {
 
     @Test
     @DisplayName("Переход на вкладку Булки")
-    public void clickOnBunsSectionButtonAutoScroll() {
+    public void clickOnBunsSectionButtonAutoScroll() throws InterruptedException {
         mainPage.clickOnFillingsSectionButton();
         mainPage.clickOnBunsSectionButton();
+        Thread.sleep(500);
         boolean isSelected = mainPage.isSectionButtonSelected(mainPage.getBunsSectionButton());
         Assert.assertTrue("Переход к разделу Булки не выполнен", isSelected);
     }
@@ -70,8 +55,9 @@ public class ConstructorTest {
 
     @Test
     @DisplayName("Переход на вкладку Начинки")
-    public void clickOnFillingsSectionButtonAutoScroll() {
+    public void clickOnFillingsSectionButtonAutoScroll() throws InterruptedException {
         mainPage.clickOnFillingsSectionButton();
+        Thread.sleep(500);
         boolean isSelected = mainPage.isSectionButtonSelected(mainPage.getFillingsSectionButton());
         Assert.assertTrue("Переход к разделу Начинки не выполнен", isSelected);
     }
