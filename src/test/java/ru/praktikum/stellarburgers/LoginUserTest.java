@@ -1,0 +1,113 @@
+package ru.praktikum.stellarburgers;
+
+import io.qameta.allure.junit4.DisplayName;
+import io.restassured.RestAssured;
+import org.junit.After;
+import org.junit.Assert;
+import org.junit.Before;
+import org.junit.Test;
+import org.openqa.selenium.WebDriver;
+import ru.praktikum.stellarburgers.api.UsersSteps;
+import ru.praktikum.stellarburgers.page_objects.*;
+import ru.praktikum.stellarburgers.pojos.SignInRequest;
+import ru.praktikum.stellarburgers.pojos.SuccessSignInSignUpResponse;
+import ru.praktikum.stellarburgers.pojos.UserRequest;
+import ru.praktikum.stellarburgers.utils.ConfigFileReader;
+import ru.praktikum.stellarburgers.utils.DriverInitializer;
+import ru.praktikum.stellarburgers.utils.UsersUtils;
+
+import java.time.Duration;
+
+public class LoginUserTest {
+    WebDriver driver;
+    MainPage mainPage;
+    LoginPage loginPage;
+    ConfigFileReader configFileReader = new ConfigFileReader();
+    UserRequest testUser;
+    String accessToken;
+    SignInRequest signInRequest;
+
+    @Before
+    public void init() {
+        testUser = UsersUtils.getUniqueUser();
+        RestAssured.enableLoggingOfRequestAndResponseIfValidationFails();
+
+        SuccessSignInSignUpResponse signUpResponse = UsersSteps.createUniqueUser(testUser)
+                .then()
+                .statusCode(200)
+                .extract()
+                .as(SuccessSignInSignUpResponse.class);
+        accessToken = signUpResponse.getAccessToken();
+
+        signInRequest = new SignInRequest(testUser.getEmail(), testUser.getPassword());
+
+        driver = DriverInitializer.createWebDriver();
+
+        driver.get(configFileReader.getApplicationUrl());
+        this.mainPage = new MainPage(driver);
+        this.loginPage = new LoginPage(driver);
+        driver.manage().window().maximize();
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+    }
+
+
+    @After
+    public void closeDriver() {
+        driver.close();
+        UsersSteps.deleteUser(accessToken);
+    }
+
+    @Test
+    @DisplayName("Вход по кнопке Войти в аккаунт на главной")
+    public void signInWithValidDataWithSignInButtonSuccess() {
+        mainPage.clickSignInButton();
+        loginPage.loginWithCredentials(signInRequest);
+        mainPage.clickAccountButton();
+        AccountPage accountPage = new AccountPage(driver);
+
+        boolean displayed = accountPage.getProfileButton().isDisplayed();
+        Assert.assertTrue("Вход в личный кабинет не выполнен", displayed);
+    }
+
+    @Test
+    @DisplayName("Вход через кнопку Личный кабинет")
+    public void signInWithValidDataWithAccountButtonSuccess() {
+        mainPage.clickAccountButton();
+        loginPage.loginWithCredentials(signInRequest);
+        mainPage.clickAccountButton();
+        AccountPage accountPage = new AccountPage(driver);
+
+        boolean displayed = accountPage.getProfileButton().isDisplayed();
+        Assert.assertTrue("Вход в личный кабинет не выполнен", displayed);
+    }
+
+    @Test
+    @DisplayName("Вход через кнопку в форме регистрации")
+    public void signInWithValidDataFromSignUpFormSuccess() {
+        mainPage.clickSignInButton();
+        loginPage.clickSignUpButton();
+        SignUpPage signUpPage = new SignUpPage(driver);
+        signUpPage.clickSignInButton();
+        loginPage.loginWithCredentials(signInRequest);
+        mainPage.clickAccountButton();
+        AccountPage accountPage = new AccountPage(driver);
+
+        boolean displayed = accountPage.getProfileButton().isDisplayed();
+        Assert.assertTrue("Вход в личный кабинет не выполнен", displayed);
+    }
+
+    @Test
+    @DisplayName("Вход через кнопку в форме восстановления пароля")
+    public void signInWithValidDataFromPasswordRecoverFormSuccess() {
+        mainPage.clickSignInButton();
+        loginPage.clickRecoverPasswordButton();
+        ForgotPasswordPage forgotPasswordPage = new ForgotPasswordPage(driver);
+        forgotPasswordPage.clickSignInButton();
+        loginPage.loginWithCredentials(signInRequest);
+        mainPage.clickAccountButton();
+        AccountPage accountPage = new AccountPage(driver);
+
+        boolean displayed = accountPage.getProfileButton().isDisplayed();
+        Assert.assertTrue("Вход в личный кабинет не выполнен", displayed);
+    }
+}
