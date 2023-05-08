@@ -62,7 +62,7 @@ public class GoToConstructorTest {
         accountPage.clickGoToConstructorButton();
 
         boolean displayed = mainPage.getBurgerConstructorHeader().isDisplayed();
-        Assert.assertTrue("Конструктор не открыт",displayed);
+        Assert.assertTrue("Конструктор не открыт", displayed);
 
         UsersSteps.deleteUser(signUpResponse.getAccessToken());
     }

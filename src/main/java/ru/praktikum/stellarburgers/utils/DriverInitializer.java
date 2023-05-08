@@ -5,8 +5,8 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 
 public class DriverInitializer {
-    private  static final String YANDEX_DRIVER_PATH = "src/test/resources/yandexdriver-23.3.0.2247-win/yandexdriver.exe";
-    private  static final String YANDEX_BROWSER_PATH =
+    private static final String YANDEX_DRIVER_PATH = "src/test/resources/yandexdriver-23.3.0.2247-win/yandexdriver.exe";
+    private static final String YANDEX_BROWSER_PATH =
             "C:\\Users\\Anatoliy\\AppData\\Local\\Yandex\\YandexBrowser\\Application\\browser.exe";
 
     public static WebDriver createWebDriver() {

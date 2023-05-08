@@ -25,7 +25,7 @@ public class GoToAccountTest {
     MainPage mainPage;
     LoginPage loginPage;
     AccountPage accountPage;
-     ConfigFileReader configFileReader = new ConfigFileReader();
+    ConfigFileReader configFileReader = new ConfigFileReader();
 
 
     @Before

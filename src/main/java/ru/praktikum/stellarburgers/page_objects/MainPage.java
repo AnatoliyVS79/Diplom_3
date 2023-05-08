@@ -60,6 +60,7 @@ public class MainPage {
     public boolean isSectionButtonSelected(WebElement sectionButton) {
         return sectionButton.getAttribute("class").contains("tab_tab_type_current__2BEPc");
     }
+
     public void checkSaucesIsDisplayed() {
         assertThat("Вкладка Соусы отображается", true,
                 equalTo(driver.findElement(By.xpath("//div[contains(span/text(),'Соусы') and contains(@class,'current')]")).isDisplayed()));
