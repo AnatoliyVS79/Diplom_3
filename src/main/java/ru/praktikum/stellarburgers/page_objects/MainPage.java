@@ -1,10 +1,14 @@
 package ru.praktikum.stellarburgers.page_objects;
 
 import lombok.Data;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+
+import static org.hamcrest.MatcherAssert.assertThat;
+import static org.hamcrest.Matchers.equalTo;
 
 @Data
 public class MainPage {
@@ -55,5 +59,19 @@ public class MainPage {
 
     public boolean isSectionButtonSelected(WebElement sectionButton) {
         return sectionButton.getAttribute("class").contains("tab_tab_type_current__2BEPc");
+    }
+    public void checkSaucesIsDisplayed() {
+        assertThat("Вкладка Соусы отображается", true,
+                equalTo(driver.findElement(By.xpath("//div[contains(span/text(),'Соусы') and contains(@class,'current')]")).isDisplayed()));
+    }
+
+    public void checkFillingsIsDisplayed() {
+        assertThat("Вкладка Начинки отображается", true,
+                equalTo(driver.findElement(By.xpath("//div[contains(span/text(),'Начинки') and contains(@class,'current')]")).isDisplayed()));
+    }
+
+    public void checkBunsIsDisplayed() {
+        assertThat("Вкладка Булки отображается", true,
+                equalTo(driver.findElement(By.xpath("//div[contains(span/text(),'Булки') and contains(@class,'current')]")).isDisplayed()));
     }
 }

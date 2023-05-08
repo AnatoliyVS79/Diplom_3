@@ -4,22 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8cd4d728-7fad-4aca-86f1-6a034eea959f" name="Changes" comment="changes in DriverInitializer class">
+    <list default="true" id="8cd4d728-7fad-4aca-86f1-6a034eea959f" name="Changes" comment="correction of comments">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/praktikum/stellarburgers/constants/Browser.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/praktikum/stellarburgers/utils/ConfigFileReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/praktikum/stellarburgers/utils/ConfigFileReader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/praktikum/stellarburgers/utils/DriverInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/praktikum/stellarburgers/utils/DriverInitializer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/praktikum/stellarburgers/utils/UsersUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/praktikum/stellarburgers/utils/UsersUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/praktikum/stellarburgers/page_objects/MainPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/praktikum/stellarburgers/page_objects/MainPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/ru/praktikum/stellarburgers/ConstructorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/praktikum/stellarburgers/ConstructorTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/praktikum/stellarburgers/GoToAccountTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/praktikum/stellarburgers/GoToAccountTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/praktikum/stellarburgers/GoToConstructorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/praktikum/stellarburgers/GoToConstructorTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/praktikum/stellarburgers/LoginUserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/praktikum/stellarburgers/LoginUserTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/praktikum/stellarburgers/LogoutTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/praktikum/stellarburgers/LogoutTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/praktikum/stellarburgers/SignUpTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/praktikum/stellarburgers/SignUpTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/allure-results/0d4f4f02-abee-4a30-8869-812b42290b14-result.json" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,7 +46,7 @@
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;G:/AUTOMATIZATION/Diplom/Diplom_Anatoliy_Samoylov_17/Diplom_3/src/test/java&quot;
+    &quot;last_opened_file_path&quot;: &quot;G:/AUTOMATIZATION/Diplom/Diplom_Anatoliy_Samoylov_17/Diplom_3/src/test/resources&quot;
   }
 }</component>
   <component name="RecentsManager">
@@ -66,11 +54,11 @@
       <recent name="config" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="G:\AUTOMATIZATION\Diplom\Diplom_Anatoliy_Samoylov_17\Diplom_3\src\test\resources" />
       <recent name="G:\AUTOMATIZATION\Diplom\Diplom_Anatoliy_Samoylov_17\Diplom_3\src\test\java" />
       <recent name="G:\AUTOMATIZATION\Diplom\Diplom_Anatoliy_Samoylov_17\Diplom_3\src\test" />
       <recent name="G:\AUTOMATIZATION\Diplom\Diplom_Anatoliy_Samoylov_17\Diplom_3\src\main\java" />
       <recent name="G:\AUTOMATIZATION\Diplom\Diplom_Anatoliy_Samoylov_17\Diplom_3\src\main\java\ru\praktikum\stellarburgers" />
-      <recent name="G:\AUTOMATIZATION\Diplom\Diplom_Anatoliy_Samoylov_17\Diplom_3\src\test\resources" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="G:\AUTOMATIZATION\Diplom\Diplom_Anatoliy_Samoylov_17\Diplom_3\src\test\resources" />
@@ -94,6 +82,38 @@
       <option name="PACKAGE_NAME" value="ru.praktikum.stellarburgers" />
       <option name="MAIN_CLASS_NAME" value="ru.praktikum.stellarburgers.ConstructorTest" />
       <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ConstructorTest.clickOnBunsSectionButtonAutoScroll" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Diplom_3" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.praktikum.stellarburgers.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.praktikum.stellarburgers" />
+      <option name="MAIN_CLASS_NAME" value="ru.praktikum.stellarburgers.ConstructorTest" />
+      <option name="METHOD_NAME" value="clickOnBunsSectionButtonAutoScroll" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ConstructorTest.clickOnFillingsSectionButtonAutoScroll" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Diplom_3" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.praktikum.stellarburgers.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.praktikum.stellarburgers" />
+      <option name="MAIN_CLASS_NAME" value="ru.praktikum.stellarburgers.ConstructorTest" />
+      <option name="METHOD_NAME" value="clickOnFillingsSectionButtonAutoScroll" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -128,44 +148,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SignUpTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Diplom_3" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ru.praktikum.stellarburgers.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="ru.praktikum.stellarburgers" />
-      <option name="MAIN_CLASS_NAME" value="ru.praktikum.stellarburgers.SignUpTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SignUpTest.signUpWithValidDataSuccess" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Diplom_3" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ru.praktikum.stellarburgers.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="ru.praktikum.stellarburgers" />
-      <option name="MAIN_CLASS_NAME" value="ru.praktikum.stellarburgers.SignUpTest" />
-      <option name="METHOD_NAME" value="signUpWithValidDataSuccess" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.ConstructorTest" />
+        <item itemvalue="JUnit.ConstructorTest.clickOnFillingsSectionButtonAutoScroll" />
+        <item itemvalue="JUnit.ConstructorTest.clickOnBunsSectionButtonAutoScroll" />
         <item itemvalue="JUnit.LoginUserTest" />
         <item itemvalue="JUnit.LogoutTest" />
-        <item itemvalue="JUnit.SignUpTest" />
-        <item itemvalue="JUnit.SignUpTest.signUpWithValidDataSuccess" />
       </list>
     </recent_temporary>
   </component>
@@ -381,11 +370,17 @@
       <option name="project" value="LOCAL" />
       <updated>1683216684374</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="correction of comments">
+      <created>1683292306108</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1683292306108</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="added ForgotPasswordPage" />
     <MESSAGE value="added BasicResponse" />
     <MESSAGE value="added NestedUserInfo" />
     <MESSAGE value="added SignInRequest" />
@@ -410,6 +405,7 @@
     <MESSAGE value="add allure report" />
     <MESSAGE value="changes in page_objects folder" />
     <MESSAGE value="changes in DriverInitializer class" />
-    <option name="LAST_COMMIT_MESSAGE" value="changes in DriverInitializer class" />
+    <MESSAGE value="correction of comments" />
+    <option name="LAST_COMMIT_MESSAGE" value="correction of comments" />
   </component>
 </project>
